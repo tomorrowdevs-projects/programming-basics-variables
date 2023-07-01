@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestUnitsOfTime(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.004-units-of-time.python.main'
+        self.module_name = 'projects.004-units-of-time.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')

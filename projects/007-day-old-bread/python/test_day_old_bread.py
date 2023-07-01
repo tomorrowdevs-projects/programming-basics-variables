@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestDayOldBread(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.007-day-old-bread.python.main'
+        self.module_name = 'projects.007-day-old-bread.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')
@@ -23,7 +23,7 @@ class TestDayOldBread(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 342
+        mock_input.return_value = '342'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -39,7 +39,7 @@ class TestDayOldBread(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 0
+        mock_input.return_value = '0'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)

@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestDogYears(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.008-dog-years.python.main'
+        self.module_name = 'projects.008-dog-years.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')
@@ -23,7 +23,7 @@ class TestDogYears(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 1
+        mock_input.return_value = '1'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -39,7 +39,7 @@ class TestDogYears(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 2
+        mock_input.return_value = '2'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -55,7 +55,7 @@ class TestDogYears(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 35
+        mock_input.return_value = '35'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -71,7 +71,7 @@ class TestDogYears(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 0
+        mock_input.return_value = '0'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)

@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestSumOfDigitsInAInteger(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.006-sum-of-digits-in-a-integer.python.main'
+        self.module_name = 'projects.006-sum-of-digits-in-a-integer.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')
