@@ -3,6 +3,12 @@
 Create a program that reads a duration from the user as a number of days, hours, minutes, and seconds. 
 Compute and display the total number of seconds represented by this duration.
 
+Example:   
+- Input days: 1  
+- Input hours: 10
+- Input minutes: 12  
+- Input seconds: 32
+- Result seconds: 123152 
 # Documentation
 
 For this project solution you may use:

@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestBottleDeposits(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.002-bottle-deposits.python.main'
+        self.module_name = 'projects.002-bottle-deposits.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')
@@ -23,7 +23,7 @@ class TestBottleDeposits(TestCase):
         Check correctly result with inputs int
         """
 
-        mock_inputs.side_effect = [1, 2]  # small, big
+        mock_inputs.side_effect = ['1', '2']  # small, big
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -43,7 +43,7 @@ class TestBottleDeposits(TestCase):
         Check correctly result only the first input value
         """
 
-        mock_inputs.side_effect = [1, 0]  # small, big
+        mock_inputs.side_effect = ['1', '0']  # small, big
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -63,7 +63,7 @@ class TestBottleDeposits(TestCase):
         Check correctly result only the second input value
         """
 
-        mock_inputs.side_effect = [0, 4]  # small, big
+        mock_inputs.side_effect = ['0', '4']  # small, big
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
