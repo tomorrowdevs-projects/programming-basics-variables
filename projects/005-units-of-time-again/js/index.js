@@ -12,35 +12,38 @@ so that leading zeros are used instead of leading spaces when a number is format
 Example: 93397  = 1:01:56:37
 */
 
-const userSeconds = Number(prompt("Inserisci il numero di secondi da convertire: "));
+const userSeconds = Number(prompt("Inserisci il numero di secondi da convertire: ")); // Converting the input from string type to number type
 
+// Transforming one unit of days, hours and minutes in seconds
 let daysInSeconds = 86400;
 let hoursInSeconds = 3600;
 let minutesInSeconds = 60;
 
+// Checking if the user input is an integer positive number
 if (userSeconds >= 0 && Number.isInteger(userSeconds) == true) {
-
+    // Computing the number of days
     let numberOfDays= userSeconds / daysInSeconds;
 
-    numberOfDays = Math.trunc(numberOfDays).toString();
+    numberOfDays = Math.trunc(numberOfDays).toString(); // Exctracting the number of days and convert it to a string
     let remainingSeconds = userSeconds % daysInSeconds;
-
+    // Computing the number of hours
     let numberOfHours= remainingSeconds / hoursInSeconds;
 
-    numberOfHours = Math.trunc(numberOfHours).toString();
+    numberOfHours = Math.trunc(numberOfHours).toString(); // Exctracting the number of hours and convert it to a string
     remainingSeconds = remainingSeconds % hoursInSeconds;
-
-    let numberOfMinutes= remainingSeconds / minutesInSeconds;
+    // Computing the number of minutes
+    let numberOfMinutes= remainingSeconds / minutesInSeconds; // Exctracting the number of minutes and convert it to a string
 
     numberOfMinutes = Math.trunc(numberOfMinutes).toString();
-    let numberOfSeconds = (remainingSeconds % minutesInSeconds).toString();
+    let numberOfSeconds = (remainingSeconds % minutesInSeconds).toString(); // Computing the remaining seconds and convert it to a string
 
+    // ** Ensuring that the computing values are shown with a leading 0 **    
     if (numberOfHours < 10) {
 
         // numberOfHours = numberOfHours.toString();
         numberOfHours = numberOfHours.padStart(2, "0");
 
-        // numberOfHours = "0" + numberOfHours; // 
+        // numberOfHours = "0" + numberOfHours; // Another method to show a leading 0
 
     }
 
