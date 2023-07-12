@@ -15,6 +15,8 @@ At the end of this path, you will be able to build a **Personalized Diet Calcula
 
 ## **Step 1** - Learn the theory
 
+Read the following chapters to the key concepts of this specific path
+
 <table>
     <th>
         <tr>
@@ -46,6 +48,26 @@ At the end of this path, you will be able to build a **Personalized Diet Calcula
           - <a href="https://eloquentjavascript.net/02_program_structure.html#h_/OBuIOX390">Eloquent Javascript - Comments</a>
           </td>
         <td><a href="https://greenteapress.com/thinkpython2/thinkpython2.pdf">Think Python (Chapter 1 and 2)</a></td>
+    </tr>
+</table>
+
+### Documentation
+Use the following documentation as a syntax reference
+
+<table>
+    <th>
+        <tr>
+            <td>Javascript</td>
+            <td>Python</td>
+        </tr>
+    </th>
+    <tr>
+        <td>
+            <a href="https://javascript.info">https://javascript.info</a>
+            <br />
+            <a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a>
+        </td>
+        <td><a href="https://docs.python.org/3.11/tutorial/index.html">https://docs.python.org/3.11/tutorial/index.html</a></td>
     </tr>
 </table>
 
