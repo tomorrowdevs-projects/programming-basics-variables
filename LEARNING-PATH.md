@@ -24,13 +24,27 @@ At the end of this path, you will be able to build a **Personalized Diet Calcula
         </tr>
     </th>
     <tr>
-        <td>Variables and Statements</td>
-        <td><a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch1.md">You Don't Know Js - Chapter 1</a></td>
+        <td>Values, Types, and Operators</td>
+        <td><a href="https://eloquentjavascript.net/01_values.html">Eloquent Javasctipt - Chapter 1</a></td>
         <td><a href="https://greenteapress.com/thinkpython2/thinkpython2.pdf">Think Python (Chapter 1 and 2)</a></td>
     </tr>
     <tr>
-        <td>Datatypes</td>
-        <td><a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/README.md">You Don't Know Js - Types and Grammar</a></td>
+        <td>Expressions and Statements</td>
+        <td>
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_5fUOQZwwHx">Eloquent Javascript - Expressions and Statements</a>
+          <br />
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu">Eloquent Javascript - Bindings</a>
+          <br />
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_SbWNrIYjdH">Eloquent Javascript - Bindings Names</a>
+          <br />
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_K5Yd6h3Axg">Eloquent Javascript - Functions</a>
+          <br />
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_rDxYNPd65Z">Eloquent Javascript - Control Flow</a>
+          <br />
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_t54vuASjLD">Eloquent Javascript - Capitalization</a>
+          <br />
+          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_/OBuIOX390">Eloquent Javascript - Comments</a>
+          </td>
         <td><a href="https://greenteapress.com/thinkpython2/thinkpython2.pdf">Think Python (Chapter 1 and 2)</a></td>
     </tr>
 </table>
@@ -68,3 +82,8 @@ Code these exercises to capture the concepts you just learned:
 Carry out a complete project as a certification of your skills
 
 - [ ] [**Personalized Diet Calculator**](./projects/final-project/)
+
+### **Additional tasks**
+
+- [ ] Create and publish a first Github repository containing this project
+- [ ] Send a message into our [Discord Community](https://discord.gg/4G5nbXRunZ), with the link of the project you just created, asking for feedbacks
