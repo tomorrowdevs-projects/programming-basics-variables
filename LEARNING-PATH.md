@@ -19,6 +19,7 @@ Read the following chapters to the key concepts of this specific path
 
 ### **Javascript**
 
+#### Theory
 - [ ] [Javascript Info - Chapter from 1 to 9](https://javascript.info/first-steps)
 - [ ] [Eloquent Javasctipt - Chapter 1](https://eloquentjavascript.net/01_values.html)
 - [ ] [Eloquent Javascript - Expressions and Statements](https://eloquentjavascript.net/02_program_structure.html#h_5fUOQZwwHx)
@@ -29,13 +30,24 @@ Read the following chapters to the key concepts of this specific path
 - [ ] [Eloquent Javascript - Capitalization](https://eloquentjavascript.net/02_program_structure.html#h_t54vuASjLD)
 - [ ] [Eloquent Javascript - Comments](https://eloquentjavascript.net/02_program_structure.html#h_/OBuIOX390)
 
+#### Syntax Reference
+- [https://javascript.info/](https://javascript.info/)
+- [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp)
+
 ### **Python**
+
+#### Theory
+
 - [ ] [Think Python (Chapter 1 and 2)](https://greenteapress.com/thinkpython2/thinkpython2.pdf)
+- [ ] [Real Python - Variables](https://realpython.com/python-variables/)
 - [ ] [Real Python - Variables](https://realpython.com/python-variables/)
 - [ ] [Real Python - Operators and Expressions](https://realpython.com/python-operators-expressions/)
 - [ ] [Real Python - Strings and string methods](https://realpython.com/courses/python-basics-strings-string-methods/)
 - [ ] [Real Python - Numbers and math](https://realpython.com/courses/python-basics-numbers-and-math/)
-  
+
+#### Syntax Reference
+- [https://www.w3schools.com/python/default.asp](https://www.w3schools.com/python/default.asp)  
+- [https://pynative.com/python/](https://pynative.com/python/)  
 
 ### **Additional resources**
 
