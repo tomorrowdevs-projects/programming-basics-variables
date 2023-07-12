@@ -17,59 +17,25 @@ At the end of this path, you will be able to build a **Personalized Diet Calcula
 
 Read the following chapters to the key concepts of this specific path
 
-<table>
-    <th>
-        <tr>
-            <td></td>
-            <td>Javascript</td>
-            <td>Python</td>
-        </tr>
-    </th>
-    <tr>
-        <td>Values, Types, and Operators</td>
-        <td><a href="https://eloquentjavascript.net/01_values.html">Eloquent Javasctipt - Chapter 1</a></td>
-        <td><a href="https://greenteapress.com/thinkpython2/thinkpython2.pdf">Think Python (Chapter 1 and 2)</a></td>
-    </tr>
-    <tr>
-        <td>Expressions and Statements</td>
-        <td>
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_5fUOQZwwHx">Eloquent Javascript - Expressions and Statements</a>
-          <br />
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu">Eloquent Javascript - Bindings</a>
-          <br />
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_SbWNrIYjdH">Eloquent Javascript - Bindings Names</a>
-          <br />
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_K5Yd6h3Axg">Eloquent Javascript - Functions</a>
-          <br />
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_rDxYNPd65Z">Eloquent Javascript - Control Flow</a>
-          <br />
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_t54vuASjLD">Eloquent Javascript - Capitalization</a>
-          <br />
-          - <a href="https://eloquentjavascript.net/02_program_structure.html#h_/OBuIOX390">Eloquent Javascript - Comments</a>
-          </td>
-        <td><a href="https://greenteapress.com/thinkpython2/thinkpython2.pdf">Think Python (Chapter 1 and 2)</a></td>
-    </tr>
-</table>
+### **Javascript**
 
-### Documentation
-Use the following documentation as a syntax reference
+- [ ] [Javascript Info - Chapter from 1 to 9](https://javascript.info/first-steps)
+- [ ] [Eloquent Javasctipt - Chapter 1](https://eloquentjavascript.net/01_values.html)
+- [ ] [Eloquent Javascript - Expressions and Statements](https://eloquentjavascript.net/02_program_structure.html#h_5fUOQZwwHx)
+- [ ] [Eloquent Javascript - Bindings](https://eloquentjavascript.net/02_program_structure.html#h_lnOC+GBEtu)
+- [ ] [Eloquent Javascript - Bindings Names](https://eloquentjavascript.net/02_program_structure.html#h_SbWNrIYjdH)
+- [ ] [Eloquent Javascript - Functions](https://eloquentjavascript.net/02_program_structure.html#h_K5Yd6h3Axg)
+- [ ] [Eloquent Javascript - Control Flow](https://eloquentjavascript.net/02_program_structure.html#h_rDxYNPd65Z)
+- [ ] [Eloquent Javascript - Capitalization](https://eloquentjavascript.net/02_program_structure.html#h_t54vuASjLD)
+- [ ] [Eloquent Javascript - Comments](https://eloquentjavascript.net/02_program_structure.html#h_/OBuIOX390)
 
-<table>
-    <th>
-        <tr>
-            <td>Javascript</td>
-            <td>Python</td>
-        </tr>
-    </th>
-    <tr>
-        <td>
-            <a href="https://javascript.info">https://javascript.info</a>
-            <br />
-            <a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a>
-        </td>
-        <td><a href="https://docs.python.org/3.11/tutorial/index.html">https://docs.python.org/3.11/tutorial/index.html</a></td>
-    </tr>
-</table>
+### **Python**
+- [ ] [Think Python (Chapter 1 and 2)](https://greenteapress.com/thinkpython2/thinkpython2.pdf)
+- [ ] [Real Python - Variables](https://realpython.com/python-variables/)
+- [ ] [Real Python - Operators and Expressions](https://realpython.com/python-operators-expressions/)
+- [ ] [Real Python - Strings and string methods](https://realpython.com/courses/python-basics-strings-string-methods/)
+- [ ] [Real Python - Numbers and math](https://realpython.com/courses/python-basics-numbers-and-math/)
+  
 
 ### **Additional resources**
 
