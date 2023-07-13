@@ -1,7 +1,6 @@
 import importlib
 import io
 import os
-import re
 import sys
 from pathlib import Path
 from unittest import TestCase, skipIf
@@ -14,7 +13,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestUnitsOfTimeAgain(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.005-units-of-time-again.python.main'
+        self.module_name = 'projects.005-units-of-time-again.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')
@@ -23,7 +22,7 @@ class TestUnitsOfTimeAgain(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 3849830
+        mock_input.return_value = '3849830'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -39,7 +38,7 @@ class TestUnitsOfTimeAgain(TestCase):
         Check if return the correct result
         """
 
-        mock_input.return_value = 0
+        mock_input.return_value = '0'
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)

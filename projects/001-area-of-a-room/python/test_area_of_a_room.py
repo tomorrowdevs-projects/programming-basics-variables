@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestAreaOfARoom(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.001-area-of-a-room.python.main'
+        self.module_name = 'projects.001-area-of-a-room.python.main'
 
     @skipIf(is_file_empty, 'Empty file')
     @patch('builtins.input')
@@ -22,7 +22,7 @@ class TestAreaOfARoom(TestCase):
         """
         Check correctly result with inputs int
         """
-        mock_inputs.side_effect = [2, 2]  # width, length
+        mock_inputs.side_effect = ['2', '2']  # width, length
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -42,7 +42,7 @@ class TestAreaOfARoom(TestCase):
         """
         Check correctly result with inputs float
         """
-        mock_inputs.side_effect = [2.0, 2.0]  # width, length
+        mock_inputs.side_effect = ['2.0', '2.0']  # width, length
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)

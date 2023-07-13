@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestMakingChange(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.003-making-change.python.main'
+        self.module_name = 'projects.003-making-change.python.main'
 
     @staticmethod
     def format_output(output: str) -> set:
@@ -48,7 +48,7 @@ class TestMakingChange(TestCase):
         """
         Check if return a correct result
         """
-        mock_input.return_value = 742
+        mock_input.return_value = '742'
 
         good_result = {('toonies', '3'), ('loonies', '1'), ('quarters', '1'),
                        ('dimes', '1'), ('nickels', '1'), ('pennies', '2')}
