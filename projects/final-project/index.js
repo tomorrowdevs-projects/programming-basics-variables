@@ -33,9 +33,53 @@ const physicalActivityLevel = prompt('Inserisci il tuo livello di attività fisi
 const foodRestraints = prompt('Hai delle preferenze di cibo o delle allergie/intolleranze da rendere note? => ');
 
 const dailyCalorieNeeds = (gender * age) + (weight * (height / 10)) + 1000;
-console.log(dailyCalorieNeeds);
+console.log('Il tuo fabbisogno calorico giornaliero è di: => ' + dailyCalorieNeeds);
 
-const breakfastCalories = dailyCalorieNeeds * 0,5;
-const lunchCalories = breakfastCalories * 0,5;
-const dinnerCalories = lunchCalories * 0,5;
-const snacksCalories = lunchCalories * 0,5;
+
+const milkCalories = 64;
+const yogurtCalories = 66;
+const citrusfruitjuiceCalories = 33;
+const jamCalories = 222;
+const honeyCalories = 304;
+const cookiesCalories = 420;
+const briocheCalories = 358;
+
+const wholeBreadCalories = 224;
+const pastaCalories = 353;
+const riceCalories = 332;
+const potatoesCalories = 85;
+const meatCalories = 127.7;
+const fishCalories = 97.1;
+const eggsCalories = 128;
+const coldCutsCalories = 114.6;
+const cheesesCalories = 271.33;
+const fruitCalories = 35.39;
+const vegetablesCalories = 20.13;
+const legumesCalories = 295.7;
+const peasCalories = 52;
+const evoOilCalories = 899;
+const butterCalories = 758;
+
+const breakfastCalories = dailyCalorieNeeds * 0.5;
+    console.log(breakfastCalories)
+const lunchCalories = breakfastCalories * 0.5;
+    console.log(lunchCalories)
+const dinnerCalories = lunchCalories * 0.5;
+    console.log(dinnerCalories)
+const snacksCalories = lunchCalories * 0.5;
+    console.log(snacksCalories)
+
+let breakfastRemainingCalories = breakfastCalories - (yogurtCalories + cookiesCalories + briocheCalories);
+
+const additionalAmountCookies = (breakfastRemainingCalories / cookiesCalories).toFixed(1);
+    console.log(additionalAmountCookies);
+const additionalCookiesCalories = additionalAmountCookies * cookiesCalories;
+
+breakfastRemainingCalories = breakfastRemainingCalories - additionalCookiesCalories;
+
+const additionalAmountBrioche = (breakfastRemainingCalories / briocheCalories).toFixed(1);
+console.log(additionalAmountBrioche);
+const additionalBriocheCalories = additionalAmountBrioche * briocheCalories;
+
+breakfastRemainingCalories = breakfastRemainingCalories - additionalBriocheCalories;
+
