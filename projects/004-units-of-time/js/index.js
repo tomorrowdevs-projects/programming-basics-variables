@@ -5,6 +5,7 @@ const getHours = 10;
 const getMinutes = 12;
 const getSeconds = 32;
 
+// I created 3 variables for chronological time measurements
 const hoursDay = 24;
 const minutesHours = 60;
 const secondsMinutes = 60;
