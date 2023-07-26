@@ -14,14 +14,6 @@ Example: 93397 = 1:01:56:37*/
 
 const userSeconds = parseFloat(prompt('Enter a number'));
 
-// if (getSeconds > 59) {
-//     if (getSeconds - 59 > 9) {
-//         alert(getSeconds);
-//     } else alert(`0${getSeconds - 59}`);
-// } else if (getSeconds < 10) {
-//     alert(`0${getSeconds}`);
-// } else alert(getSeconds);
-
 const getNumberDays =
     userSeconds >= 86400
         ? `${Math.trunc(userSeconds / 86400)}`
