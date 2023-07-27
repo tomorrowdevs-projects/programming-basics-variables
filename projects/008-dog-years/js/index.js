@@ -1,5 +1,19 @@
 'use strict';
 
+/*
+DOG YEARS
+
+1) Usually 1 human years = 7 dog years;
+
+2) First 2 human years = 10.5 dog years each and the other human years = 4 dog years each
+
+3) Convert human years in dog years
+  3.1) human years < 2
+  3.2) human years is a negativ number
+  3.3) human years >= 2
+  
+*/
+
 const humanYears = parseFloat(prompt('Enter your age or any number'));
 
 // Use multiple ternary operator to annidate all the possibilities
