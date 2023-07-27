@@ -1,21 +1,21 @@
 'use strict';
 
 /*Day Old Bread
-A bakery sells loaves of bread for €3.49 each.
-Day old bread is discounted by 60 percent.
 
-Write a program that begins by reading the number of loaves of day-old bread being purchased from the user. Then your program should display:
+1) A bakery sells loaves of bread for €3.49 each.
 
-Regular price for the bread
-Discount because it is a day old
-Total price
-Each of these amounts should be displayed on its own line with an appropriate label. All the values should be displayed using two decimal places, and the decimal points in all the numbers should be aligned when reasonable values are entered by the user.
+2)Day old bread is discounted by 60 percent.
 
-Example:
-Input = 256
-Regular price: 893.44€
-Discount: 536.06€
-Total price: 357.38€*/
+3)Write a program that begins by reading the number of loaves of day-old bread being purchased from the user. Then your program should display:
+
+  3.1) Regular price for the bread
+  3.2) Discount because it is a day old
+  3.3) Total price
+Each of these amounts should be displayed on its own line with an appropriate label. 
+
+4) All the values should be displayed using two decimal places, and the decimal points in all the numbers should be aligned when reasonable values are entered by the user.
+
+*/
 
 const unitPriceBread = 3.49;
 const numberLoaves = parseFloat(
