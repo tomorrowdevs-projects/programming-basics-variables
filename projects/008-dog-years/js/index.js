@@ -17,17 +17,3 @@ const dogYears =
 const conversionYears = alert(
     `${humanYears} human years = ${dogYears} dog years.`
 );
-// const dogYears = alert(10.5 * 2 + (humanYears - 2) * 4);
-// let dogYears;
-
-// if (humanYears < 2) {
-//     let dogYears = humanYears * 2;
-// } else if (humanYears < 0) {
-//     prompt('Please enter a number greater than 0');
-// } else {
-//     let dogYears = 10.5 * 2 + (humanYears - 2) * 4;
-// }
-
-// const conversionYears = alert(
-//     `${humanYears} human years = ${dogYears} dog years.`
-// );
