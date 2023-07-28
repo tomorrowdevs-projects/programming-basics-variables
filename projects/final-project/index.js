@@ -41,3 +41,11 @@ const userDailyCalorie =
         : alert(
               'It was not possible to calculate the daily calorie requirement, because the gender entered is incorrect. Please choose between male and female.'
           );
+
+/* Distribuzione giornaliera orientativa delle calorie:
+15% delle calorie a colazione (non meno del 12-13% e non più del 20%)
+05% delle calorie nello spuntino di metà mattina (non meno del 4% e non più dell'8-10%)
+40% delle calorie nel pranzo (non meno del 35% ma assolutamente non più del 40%)
+05% delle calorie nello spuntino di metà mattina (non meno del 4% e non più dell'8-10%)
+35% delle calorie nella cena (non meno del 30% ma assolutamente non più del 35-40%) 
+*/
