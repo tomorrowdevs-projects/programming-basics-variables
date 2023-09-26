@@ -31,5 +31,4 @@ function message (){
     console.log(output)
     }
 
-
 message();
