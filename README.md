@@ -1,13 +1,32 @@
-# TomorrowDevs Programming Basics Learning Path
+# **TomorrowDevs Programming Basics Learning Path**
+## **Variables, Expressions, Statements and Strings** 
 
-This is a repository containing all the projects for **TomorrowDevs** students to learn Programming Basics. <br />
-This repo aims to give students a way to discover, study, and implement basic data structures, algorithms, patterns, user interfaces, etc.
+This repository is part of the full Programming Basics Learning Path by Tomorrowdevs.
 
-Before committing anything to that repo, please read the contribution guide at [CONTRIBUTING.md](/CONTRIBUTING.md).
+The aim of this path is to allow people to learn Programming skills by building practical projects.
+## **Description**
 
-<hr>
+The final purpose of this path is to allow you to build a first real-world project, that you can use in your everyday life.
+In this case, you will build a Personalized Diet Calculator, just using Variables, expressions, statements and string.
 
-<img src="./logo-td.png">
+In order to achieve that, youl will be guided into different steps and tasks, composed by a combination of theory and coding.
+
+Furthermore, you will be introduced to the fundamentals of programming and computer science. 
+
+You will watch a series of videos that explain the basics of programming languages, how the internet works, and the tools that you'll use throughout the course. 
+
+Additionally, you will create an account on LinkedIn to help you expand your professional network.
+
+## **Why It Matters**
+Understanding the basics of programming, the internet, and the tools you'll be using is crucial for your journey as a developer. The content we selected will help you build a solid foundation and gain confidence in your ability to learn more advanced topics in the future. 
+
+Furthermore, creating a LinkedIn account will allow you to connect with professionals in the industry and access potential job opportunities as you progress through the course.
+
+# 🚀 **[Jump to the Learning Path!](LEARNING-PATH.md)** 💻
+
+
+## **Credits** 
+<img src="./logo-td.png" width="300">
 
 ### A Mentorship program for developers
 
@@ -30,8 +49,3 @@ Need help in solution development, guidance, training or capacity building, care
 We are a community of Software Engineers with years of technical and leadership experience in a diverse range of technologies and domains. 
 
 Let us know what problem you are facing at <b>http://www.tomorrowdevs.com</b> and we can schedule a consultation meeting to help you get through it.
-
-## Contributions Welcome
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
-
-If you find any bug in the code or have any improvements in mind then feel free to generate a pull request.
