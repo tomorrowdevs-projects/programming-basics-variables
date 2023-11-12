@@ -1,0 +1,6 @@
+ask_room_length = input("Please enter the length of your room in meters: ")
+room_length = float(ask_room_length)
+ask_room_width = input("Please enter the width of your room in meters: ")
+room_width = float(ask_room_width)
+area_of_room = (room_width * room_length)
+print("The area of your room is " + str(area_of_room) + " meters")
