@@ -362,3 +362,7 @@ Cargo.lock
 # End of https://www.toptal.com/developers/gitignore/api/node,go,java,intellij,visualstudiocode,haskell,erlang,elixir,rust
 /.vs/ProjectSettings.json
 /.vs/slnx.sqlite
+projects/001-area-of-a-room/__pycache__/__init__.cpython-312.pyc
+projects/001-area-of-a-room/python/__pycache__/__init__.cpython-312.pyc
+projects/001-area-of-a-room/python/__pycache__/main.cpython-312.pyc
+projects/001-area-of-a-room/python/__pycache__/test_area_of_a_room.cpython-312.pyc
