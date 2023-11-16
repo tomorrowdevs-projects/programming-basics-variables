@@ -1,4 +1,4 @@
-print("This machine will give you $0.10 for each container up to 1 lt, and 0.25 for containers bigger than 1 lt.")
+print("Hello! This machine will give you $0.10 for each container up to 1 lt, and 0.25 for containers bigger than 1 lt.")
 small_bottles = input("How many small bottles do you have?")
 big_bottles = input("How many big bottles do you have?")
 number_of_small_bottles = int(small_bottles)
