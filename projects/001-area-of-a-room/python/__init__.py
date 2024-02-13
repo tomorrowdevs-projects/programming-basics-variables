@@ -4,8 +4,8 @@
 # 4. Include units in your prompt and output message; either feet or meters, depending on which
 #    unit you are more comfortable working with.
 
-width = input("Inserisci la larghezza:")
-length = input("Inserisci la lunghezza:")
+width = input("Inserisci la larghezza in mq:")
+length = input("Inserisci la lunghezza in mq:")
 
 area = float(width)*float(length)
 
