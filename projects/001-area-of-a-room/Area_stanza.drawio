@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2024-03-17T15:26:29.389Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 LikeWise/96.6.6357.60" etag="tc1BAU33WH_i0BmdialP" version="24.0.4" type="device">
+  <diagram name="Pagina-1" id="0AnqsW0-YUTx0QtPRq2M">
+    <mxGraphModel dx="880" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PD82eA1up8iGm1APiTmn-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-1" target="PD82eA1up8iGm1APiTmn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-2" target="PD82eA1up8iGm1APiTmn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-2" value="Chiedere utente&lt;div&gt;unità di misura&lt;/div&gt;&lt;div&gt;delle lunghezze&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-4" target="PD82eA1up8iGm1APiTmn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-4" value="Assegnare unità&lt;div&gt;di misura a variabile&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-6" target="PD82eA1up8iGm1APiTmn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-6" value="chiedere a utente&lt;div&gt;lunghezza stanza&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-8" target="PD82eA1up8iGm1APiTmn-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-8" value="Assegnare lunghezza stanza a variable come floating point" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-11" target="PD82eA1up8iGm1APiTmn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-11" value="chiedere a utente&lt;div&gt;larghezza stanza&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-12" target="PD82eA1up8iGm1APiTmn-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-12" value="Assegnare larghezza stanza a variabile come floating point" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-14" target="PD82eA1up8iGm1APiTmn-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-14" value="Calcolare e assegnare a variabile&lt;div&gt;l&#39;area della stanza come floating poin&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PD82eA1up8iGm1APiTmn-16" target="PD82eA1up8iGm1APiTmn-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-16" value="Mostrare a video l&#39;area della stanza con la relativa unità di misura" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PD82eA1up8iGm1APiTmn-18" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
