@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2024-03-17T17:51:56.232Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 LikeWise/96.6.6357.60" etag="LfubE__Y2PHqYO80v9Gd" version="24.0.7" type="device">
+  <diagram name="Pagina-1" id="Ungbcu5Dow3fbD0V2W7u">
+    <mxGraphModel dx="880" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-1" target="iKtbAZ_yp_36YXxWFGt8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-2" target="iKtbAZ_yp_36YXxWFGt8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-2" value="Chiedere numero bottiglie di volume inferiore o uguale a 1 L" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-4" target="iKtbAZ_yp_36YXxWFGt8-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-4" value="Salvare in variabile il numero di bottiglie di volume inferiore o uguale a 1 L" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-7" target="iKtbAZ_yp_36YXxWFGt8-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-7" value="Calcolare il compenso come prodotto del numero di bottiglie inferiore o uguale a 1 L per 0.1 $" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="346" y="300" width="136" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-8" target="iKtbAZ_yp_36YXxWFGt8-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-8" value="Salvare il compenso in una variabile a doppia precisione decimale" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-11" target="iKtbAZ_yp_36YXxWFGt8-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-11" value="Chiedere numero bottiglie di volume maggiore a 1 L" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-13" target="iKtbAZ_yp_36YXxWFGt8-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-13" value="Salvare in variabile il numero di bottiglie di volume maggiore a 1 L" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-15" target="iKtbAZ_yp_36YXxWFGt8-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-15" value="Calcolare il compenso come prodotto del numero di bottiglie di volume superiore a 1 L per 0.25 $" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="346" y="660" width="136" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-16" target="iKtbAZ_yp_36YXxWFGt8-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-16" value="Sommare il risultato al compenso per le bottiglie di volume inferiore a 1 L" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iKtbAZ_yp_36YXxWFGt8-18" target="iKtbAZ_yp_36YXxWFGt8-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-18" value="Salvare il risultato nella stessa variabile in cui è salvato il compenso per le bottiglie di volume inferiore a 1L" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="840" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="iKtbAZ_yp_36YXxWFGt8-20" value="Stampare a video il compenso totale in dollari" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
