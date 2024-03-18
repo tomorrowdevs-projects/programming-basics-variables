@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" modified="2024-03-18T21:07:48.296Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 LikeWise/96.6.6357.60" etag="drFbhVFDWDHr-QfvdX_7" version="24.0.7" type="device">
+  <diagram name="Pagina-1" id="jYzrcmdSCKAgR3gdf0s2">
+    <mxGraphModel dx="880" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="APFXjStTtcaWU7gSrCgq-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-1" target="APFXjStTtcaWU7gSrCgq-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-2" target="APFXjStTtcaWU7gSrCgq-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-2" value="Chiedere ammontare&lt;div&gt;centesimi come intero&lt;/div&gt;&lt;div&gt;in cifre&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-4" target="APFXjStTtcaWU7gSrCgq-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-4" value="Dividere ammontare per moneta di valore maggiore non ancora usata" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-6" target="APFXjStTtcaWU7gSrCgq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-6" value="Salvare parte intera in nuova variabile" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="390" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-8" target="APFXjStTtcaWU7gSrCgq-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-8" value="Mostrare a video il nome della moneta in uso seguito dalla parte intera calcolata" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-10" target="APFXjStTtcaWU7gSrCgq-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-10" value="Sottrarre all&#39;ammontare totale di centesimi il prodotto della parte intera per il valore della moneta in uso&lt;div&gt;ed aggiornare ammontare centesimi&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="580" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-12" target="APFXjStTtcaWU7gSrCgq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-12" value="Salvare ammontare in nuova variabile" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-16" target="APFXjStTtcaWU7gSrCgq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-19" value="SI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="APFXjStTtcaWU7gSrCgq-18">
+          <mxGeometry x="-0.1183" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="APFXjStTtcaWU7gSrCgq-16" target="APFXjStTtcaWU7gSrCgq-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-16" value="Sono disponibili altri tagli&lt;div&gt;di moneta?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="730" width="187" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="APFXjStTtcaWU7gSrCgq-20" value="END" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="353.5" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
