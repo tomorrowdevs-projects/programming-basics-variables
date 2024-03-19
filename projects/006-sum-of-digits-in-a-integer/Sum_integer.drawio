@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-03-19T21:59:13.855Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 LikeWise/96.6.6357.60" etag="ZGl1LkRT1vounQMLOD3y" version="24.0.7" type="device">
+  <diagram name="Pagina-1" id="BL5m8A6FJCK8gkdFeMHz">
+    <mxGraphModel dx="880" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F5wvV-RE6pf7aEKNAKgd-1" target="F5wvV-RE6pf7aEKNAKgd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F5wvV-RE6pf7aEKNAKgd-2" target="F5wvV-RE6pf7aEKNAKgd-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-2" value="Chiedere in input un numero intero di quattro cifre e salvarlo in variabile" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F5wvV-RE6pf7aEKNAKgd-4" target="F5wvV-RE6pf7aEKNAKgd-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-4" value="Dividere il numero in quattro cifre" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F5wvV-RE6pf7aEKNAKgd-8" target="F5wvV-RE6pf7aEKNAKgd-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-8" value="Sommare le quattro cifre" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F5wvV-RE6pf7aEKNAKgd-10" target="F5wvV-RE6pf7aEKNAKgd-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-10" value="Stampare a video risultato" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5wvV-RE6pf7aEKNAKgd-12" value="END" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
