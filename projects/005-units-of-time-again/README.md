@@ -1,10 +1,16 @@
+---
+runme:
+  id: 01HSC94YF7HKFSWPZQQYE1EHP0
+  version: v3
+---
+
 # UNITS OF TIME (AGAIN)
 
-In this exercise you will reverse the process described in Exercise 4.   
-Develop a program that begins by reading a number of seconds from the user.   
+In this exercise you will reverse the process described in Exercise 4.  
+Develop a program that begins by reading a number of seconds from the user.  
 Then your program should display the equivalent amount of time in the form D:HH:MM:SS,  
-where D, HH, MM, and SS represent days, hours, minutes and seconds respectively.   
-The hours, minutes and seconds should all be formatted so that they occupy exactly two digits.   
+where D, HH, MM, and SS represent days, hours, minutes and seconds respectively.  
+The hours, minutes and seconds should all be formatted so that they occupy exactly two digits.  
 Use your research skills determine what additional character needs to be included in the format specifier
 so that leading zeros are used instead of leading spaces when a number is formatted to a particular width.
 
@@ -17,25 +23,23 @@ For this project solution you may use:
 - Variables, expressions, statements
 - Strings
 
-
 # Test
-Execute the test to validate your solution.  
 
-**VSCODE**   
-To run the test command from the README.md install the extension **runme**. 
-Press Ctrl+Shift+x search and install the **runme** extension. 
+Execute the test to validate your solution.
 
+**VSCODE**  
+To run the test command from the README.md install the extension **runme**.
+Press Ctrl+Shift+x search and install the **runme** extension.
 
 **Python**
 
-```sh
+```sh {"id":"01HSC94YF7HKFSWPZQQWFTWF09"}
 python -m unittest python/test_units_of_time_again.py
+
 ```
 
 or run the command from the terminal  
 `python -m unittest projects/005-units-of-time-again/python/test_units_of_time_again.py`
-
-
 
 # Deadline
 
