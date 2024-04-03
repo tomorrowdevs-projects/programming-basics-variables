@@ -66,39 +66,39 @@ launch base-launch condiment;dinner base-dinner condiment" (if you have no prefe
 food_restr=input('Enter your restrictions (input has to be submitted in this format restr1-restr2-...):')
 
 #OPERATING RESTRICTIONS
-cereals=cereals*(not cereals[0:cereals.index('-')] in food_restr)+'none'*(cereals[0:cereals.index('-')] in food_restr)
-muesli=muesli*(not muesli[0:muesli.index('-')] in food_restr)+'none'*(muesli[0:muesli.index('-')] in food_restr)
-milk=milk*(not milk[0:milk.index('-')] in food_restr)+'none'*(milk[0:milk.index('-')] in food_restr)
-yogurt=yogurt*(not yogurt[0:yogurt.index('-')] in food_restr)+'none'*(yogurt[0:yogurt.index('-')] in food_restr)
-brown_melba_toast=brown_melba_toast*(not brown_melba_toast[0:brown_melba_toast.index('-')] in food_restr)+'none'*\
-(brown_melba_toast[0:brown_melba_toast.index('-')] in food_restr)
-melba_toast=melba_toast*(not melba_toast[0:melba_toast.index('-')] in food_restr)+'none'*(melba_toast[0:melba_toast.index('-')]\
+cereals=cereals*(not cereals[0:cereals.index(' -')] in food_restr)+'none-'*(cereals[0:cereals.index(' -')] in food_restr)
+muesli=muesli*(not muesli[0:muesli.index(' -')] in food_restr)+'none-'*(muesli[0:muesli.index(' -')] in food_restr)
+milk=milk*(not milk[0:milk.index(' -')] in food_restr)+'none-'*(milk[0:milk.index(' -')] in food_restr)
+yogurt=yogurt*(not yogurt[0:yogurt.index(' -')] in food_restr)+'none-'*(yogurt[0:yogurt.index(' -')] in food_restr)
+brown_melba_toast=brown_melba_toast*(not brown_melba_toast[0:brown_melba_toast.index(' -')] in food_restr)+'none-'*\
+(brown_melba_toast[0:brown_melba_toast.index(' -')] in food_restr)
+melba_toast=melba_toast*(not melba_toast[0:melba_toast.index(' -')] in food_restr)+'none-'*(melba_toast[0:melba_toast.index(' -')]\
 in food_restr)
-bread=bread*(not bread[0:bread.index('-')] in food_restr)+'none'*(bread[0:bread.index('-')] in food_restr)
-brown_bread=brown_bread*(not brown_bread[0:brown_bread.index('-')] in food_restr)+'none'*(brown_bread[0:brown_bread.index('-')]\
+bread=bread*(not bread[0:bread.index(' -')] in food_restr)+'none-'*(bread[0:bread.index(' -')] in food_restr)
+brown_bread=brown_bread*(not brown_bread[0:brown_bread.index(' -')] in food_restr)+'none-'*(brown_bread[0:brown_bread.index(' -')]\
 in food_restr)
-hazelnut_cream=hazelnut_cream*(not hazelnut_cream[0:hazelnut_cream.index('-')] in food_restr)+'none'*(hazelnut_cream\
-[0:hazelnut_cream.index('-')] in food_restr)
-marmalade=marmalade*(not marmalade[0:marmalade.index('-')] in food_restr)+'none'*(marmalade[0:marmalade.index('-')] in food_restr)
-apple=apple*(not apple[0:apple.index('-')] in food_restr)+'none'*(apple[0:apple.index('-')] in food_restr)
-banana=banana*(not banana[0:banana.index('-')] in food_restr)+'none'*(banana[0:banana.index('-')] in food_restr)
-orange=orange*(not orange[0:orange.index('-')] in food_restr)+'none'*(orange[0:orange.index('-')] in food_restr)
-kiwi=kiwi*(not kiwi[0:kiwi.index('-')] in food_restr)+'none'*(kiwi[0:kiwi.index('-')] in food_restr)
-nut=nut*(not nut[0:nut.index('-')] in food_restr)+'none'*(nut[0:nut.index('-')] in food_restr)
-almond=almond*(not almond[0:almond.index('-')] in food_restr)+'none'*(almond[0:almond.index('-')] in food_restr)
-pasta=pasta*(not pasta[0:pasta.index('-')] in food_restr)+'none'*(pasta[0:pasta.index('-')] in food_restr)
-wholemeal_pasta=wholemeal_pasta*(not wholemeal_pasta[0:wholemeal_pasta.index('-')] in food_restr)+'none'*(wholemeal_pasta[0:wholemeal_pasta.index('-')] in food_restr)
-rice=rice*(not rice[0:rice.index('-')] in food_restr)+'none'*(rice[0:rice.index('-')] in food_restr)
-tomato_sauce=tomato_sauce*(not tomato_sauce[0:tomato_sauce.index('-')] in food_restr)+'none'*(tomato_sauce[0:tomato_sauce.index('-')] in food_restr)
-chicken=chicken*(not chicken[0:chicken.index('-')] in food_restr)+'none'*(chicken[0:chicken.index('-')] in food_restr)
-salad=salad*(not salad[0:salad.index('-')] in food_restr)+'none'*(salad[0:salad.index('-')] in food_restr)
-bresaola=bresaola*(not bresaola[0:bresaola.index('-')] in food_restr)+'none'*(bresaola[0:bresaola.index('-')] in food_restr)
-raw_ham=raw_ham*(not raw_ham[0:raw_ham.index('-')] in food_restr)+'none'*(raw_ham[0:raw_ham.index('-')] in food_restr)
-vegetable_soup=vegetable_soup*(not vegetable_soup[0:vegetable_soup.index('-')] in food_restr)+'none'*(vegetable_soup\
-[0:vegetable_soup.index('-')] in food_restr)
-beef=beef*(not beef[0:beef.index('-')] in food_restr)+'none'*(beef[0:beef.index('-')] in food_restr)
-pizza_margherita=pizza_margherita*(not pizza_margherita[0:pizza_margherita.index('-')] in food_restr)+'none'*\
-(pizza_margherita[0:pizza_margherita.index('-')] in food_restr)
+hazelnut_cream=hazelnut_cream*(not hazelnut_cream[0:hazelnut_cream.index(' -')] in food_restr)+'none-'*(hazelnut_cream\
+[0:hazelnut_cream.index(' -')] in food_restr)
+marmalade=marmalade*(not marmalade[0:marmalade.index(' -')] in food_restr)+'none-'*(marmalade[0:marmalade.index(' -')] in food_restr)
+apple=apple*(not apple[0:apple.index(' -')] in food_restr)+'none-'*(apple[0:apple.index(' -')] in food_restr)
+banana=banana*(not banana[0:banana.index(' -')] in food_restr)+'none-'*(banana[0:banana.index(' -')] in food_restr)
+orange=orange*(not orange[0:orange.index(' -')] in food_restr)+'none-'*(orange[0:orange.index(' -')] in food_restr)
+kiwi=kiwi*(not kiwi[0:kiwi.index(' -')] in food_restr)+'none-'*(kiwi[0:kiwi.index(' -')] in food_restr)
+nut=nut*(not nut[0:nut.index(' -')] in food_restr)+'none-'*(nut[0:nut.index(' -')] in food_restr)
+almond=almond*(not almond[0:almond.index(' -')] in food_restr)+'none-'*(almond[0:almond.index(' -')] in food_restr)
+pasta=pasta*(not pasta[0:pasta.index(' -')] in food_restr)+'none-'*(pasta[0:pasta.index(' -')] in food_restr)
+wholemeal_pasta=wholemeal_pasta*(not wholemeal_pasta[0:wholemeal_pasta.index(' -')] in food_restr)+'none-'*(wholemeal_pasta[0:wholemeal_pasta.index(' -')] in food_restr)
+rice=rice*(not rice[0:rice.index(' -')] in food_restr)+'none-'*(rice[0:rice.index(' -')] in food_restr)
+tomato_sauce=tomato_sauce*(not tomato_sauce[0:tomato_sauce.index(' -')] in food_restr)+'none-'*(tomato_sauce[0:tomato_sauce.index(' -')] in food_restr)
+chicken=chicken*(not chicken[0:chicken.index(' -')] in food_restr)+'none-'*(chicken[0:chicken.index(' -')] in food_restr)
+salad=salad*(not salad[0:salad.index(' -')] in food_restr)+'none-'*(salad[0:salad.index(' -')] in food_restr)
+bresaola=bresaola*(not bresaola[0:bresaola.index(' -')] in food_restr)+'none-'*(bresaola[0:bresaola.index(' -')] in food_restr)
+raw_ham=raw_ham*(not raw_ham[0:raw_ham.index(' -')] in food_restr)+'none-'*(raw_ham[0:raw_ham.index(' -')] in food_restr)
+vegetable_soup=vegetable_soup*(not vegetable_soup[0:vegetable_soup.index(' -')] in food_restr)+'none-'*(vegetable_soup\
+[0:vegetable_soup.index(' -')] in food_restr)
+beef=beef*(not beef[0:beef.index(' -')] in food_restr)+'none-'*(beef[0:beef.index(' -')] in food_restr)
+pizza_margherita=pizza_margherita*(not pizza_margherita[0:pizza_margherita.index(' -')] in food_restr)+'none-'*\
+(pizza_margherita[0:pizza_margherita.index(' -')] in food_restr)
 
 #CALORIE NEED CALCULATION
 BCN=(gender=='male')*(66.5+(13.8*weight)+5*height-6.8*age)+(gender=='female')*(655.1+(9.6*weight)+1.9*height-4.7*age) #daily basic calorie need
@@ -132,7 +132,7 @@ c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
 moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
 b_qt=int(b_qt*moltiplicatore*100)
 c_qt=int(c_qt*moltiplicatore*100)
-daily_diet='BREAKFAST\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n'
+daily_diet='BREAKFAST\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n\n'
 
 #SNACK
 base=preferences[0:preferences.index('-')]
@@ -153,7 +153,7 @@ c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
 moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
 b_qt=int(b_qt*moltiplicatore*100)
 c_qt=int(c_qt*moltiplicatore*100)
-snack='SNACK\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n'
+snack='SNACK\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n\n'
 daily_diet=daily_diet+snack
 
 #LAUNCH
@@ -179,7 +179,7 @@ c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
 moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
 b_qt=int(b_qt*moltiplicatore*100)
 c_qt=int(c_qt*moltiplicatore*100)
-daily_diet=daily_diet+'LAUNCH\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n'
+daily_diet=daily_diet+'LAUNCH\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n\n'
 daily_diet=daily_diet+snack
 
 #DINNER
@@ -202,6 +202,6 @@ c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
 moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
 b_qt=int(b_qt*moltiplicatore*100)
 c_qt=int(c_qt*moltiplicatore*100)
-daily_diet=daily_diet+'DINNER\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n'
+daily_diet=daily_diet+'DINNER\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g'
 
-print(daily_diet+'\n\nThank you for having tried our app! (Light weigth babyyyyy!! [cit. Ronnie Colemann])')
+print(daily_diet+'\n\nThank you for having tried our app!')
