@@ -1,7 +1,7 @@
-#REQUESTS
+#--REQUIREMENTS--#
 # 1) Calculation of daily calorie need
 # 1.1) ask user for gender (male/female)
-# 1.2) ask user for heght (in cm)
+# 1.2) ask user for height (in cm)
 # 1.3) ask user for weigth (in kg)
 # 1.4) ask user for level of physical activity (sedentary/light/moderate/heavy)
 # 2) Diet creation
@@ -9,199 +9,314 @@
 # 2.2) create text variables for food and their nutritional info
 # 2.3) calculate the amount of food for each meal
 # 2.4) store the daily diet in text variable
+# 3) Printing results
+# 3.1) Print diet to terminal
+# 3.2) Print a closing message
 
-#CREATING A FOOD DB (food name - kCal)
-#note: the kcal value is relevant to 100 g of product
-#breakfast
-cereals='Cereals - kCal 348 - g 80'
-muesli='Muesli - kCal 442 - g 80'
-milk='Milk - kCal 59 - g 250'
-yogurt='Yogurt - kCal 66 - g 250'
-brown_melba_toast='Brown melba toast - kCal 413 - g 80'
-melba_toast='Melba toast - kCal 421 - g 80'
-bread='Bread - kCal 264 - g 80'
-brown_bread='Brown bread - kCal 213 - g 80'
-hazelnut_cream='Hazelnut cream - kCal 551 - g 30'
-marmalade='Marmalade - kCal 246 - g 30'
-#snack
-apple='Apple - kCal 52 - g 150'
-banana='Banana - kCal 89 - g 100'
-orange='Orange - kCal 45 - g 200'
-kiwi='Kiwi - kCal 58 - g 90'
-nut='Nut - kCal 709 - g 10'
-almond='Almond - kCal 624 - g 1'
-#launch
-pasta='Pasta - kCal 353 - g 80'
-wholemeal_pasta='Wholemeal pasta - kCal 338 - g 80'
-rice='Rice - kCal 350 - g 80'
-tomato_sauce='Tomato sauce - kCal 69 - g 100'
-chicken='Chicken - kCal 128 - g 200'
-salad='Salad - kCal 20 - g 80'
+#--NOTES ON THE SOFTWARE--#
+#The aim of the software consist in creating a daily diet for the user. In order reach this aim, a food DB is created
+#with various foods. Each food can be a base or a condiment, i.d. in the daily diet will be assigned to the user
+#a dish for each meal composed by a base and a condiment. Every food has associated a base quantity which is used
+#to create the dish, so that each dish has a base calorie content obtained by the sum of the calorie contente
+#of the base and the condiment. The base calorie content of the dish will be adjusted in order to fulfill the
+#meal calorie need with a multiplier that is used to multiply the base quantity of base and condiment of the dish
+
+#--CREATING A FOOD DB--#
+#Note on structure: for each food the DB has three variable FoodName_label (string with name of the food),
+#                   FoodName_kcal (int with the calorie content) and FoodName_g (int with the base quantity to be combined with other
+#                   foods)
+#Note on nutritional values: the kcal and nutritional values are relevant to 100 g of product
+#BREAKFAST#
+#bases#
+cereals_label='Cereals'
+cereals_kcal=348
+cereals_g=80
+muesli_label='Muesli'
+muesli_kcal=442
+muesli_g=80
+brown_melba_toast_label='Brown melba toast' 
+brown_melba_toast_kcal=413
+brown_melba_toast_g=80
+melba_toast_label='Melba toast'
+melba_toast_kcal=421
+melba_toast_g=80
+bread_label='Bread'
+bread_kcal=264
+bread_g=80
+brown_bread_label='Brown bread'
+brown_bread_kcal=213
+brown_bread_g=80
+#condiment#
+milk_label='Milk'
+milk_kcal=59
+milk_g=250
+yogurt_label='Yogurt'
+yogurt_kcal=66
+yogurt_g=250
+hazelnut_cream_label='Hazelnut cream'
+hazelnut_cream_kcal=551
+hazelnut_cream_g=30
+marmalade_label='Marmalade'
+marmalade_kcal=246
+marmalade_g=30
+#SNACK#
+#base1#
+apple_label='Apple'
+apple_kcal=52
+apple_g=150
+banana_label='Banana'
+banana_kcal=89
+banana_g=100
+orange_label='Orange'
+orange_kcal=45
+orange_g=200
+kiwi_label='Kiwi'
+kiwi_kcal=58
+kiwi_g=90
+#base2#
+nut_label='Nut'
+nut_kcal=709
+nut_g=10
+almond_label='Almond'
+almond_kcal=624
+almond_g=1
+#LAUNCH#
+#base#
+pasta_label='Pasta'
+pasta_kcal=353
+pasta_g=80
+wholemeal_pasta_label='Wholemeal pasta'
+wholemeal_pasta_kCal=338
+wholemeal_pasta_g=80
+rice_label='Rice'
+rice_kcal=350
+rice_g=80
+chicken_label='Chicken'
+chicken_kcal=128
+chicken_g=200
 #bread/brown bread
-bresaola='Bresaola - kCal 167 - g 200'
-raw_ham='Raw ham - kCal 229 - g 200'
-#dinner
+bresaola_label='Bresaola'
+bresaola_kcal=167
+bresaola_g=200
+raw_ham_label='Raw ham'
+raw_ham_kcal=229
+raw_ham_g=200
+#condiment
+tomato_sauce_label='Tomato sauce'
+tomato_sauce_kcal=69
+tomato_sauce_g=100
+salad_label='Salad'
+salad_kCal=20
+salad_g=80
+#DINNER#
+#bases#
 #chicken
-#salad
 #bread/brown bread
-vegetable_soup='Vegetable soup - kCal 53 - g 200'
-beef='Beef - kCal 134 - g 200'
-pizza_margherita='Pizza margherita - kCal 238 - g 350'
+beef_label='Beef'
+beef_kcal=134
+beef_g=200
+pizza_margherita_label='Pizza margherita'
+pizza_margherita_kcal=238
+pizza_margherita_g=350
+#condiments#
+#salad
+vegetable_soup_label='Vegetable soup'
+vegetable_soup_kcal=53
+vegetable_soup_g=200
 
-#CREATING FOOD LIST
+#--CREATING FOOD LIST--#
 food_list='BREAKFAST\nCereals\nMuesli\nMilk\nYogurt\nBrown melba toast\nMelba toast\nBread\nBrown bread\nHazelnut cream\nMarmalade\
 \n\nSNACK\nApple\nBanana\nOrange\nKiwi\nNut\nAlmond\n\nLAUNCH\nPasta\nWholemeal pasta\nRice\nTomato sauce\nChicken\nSalad\nBread\
 \nBrown bread\nBresaola\nRaw ham\n\nDINNER\nChicken\nSalad\nBread\nBrown bread\nVegetable soup\nBeef\nPizza margherita'
 
-#ASKING FOR USER INPUT
+#--ASKING FOR USER INPUT--#
 gender=input('Enter your gender (male/female):')
 age=int(input('Enter your age (only positive integer numbers in digits):'))
 height=int(input('Enter your height in cm (only positive integer numbers in digit):'))
 weight=float(input('Enter your weight in kg (only positive numbers in digits):'))
 activity=input('Enter your level of physical activity (sedentary/light/medium/high):')
+
 print('Please, read carefully the avaible list of food and then input your preferences or restrictions. If you have no preferences or\
  restriction, type none.\n\n'+food_list) #showing user the available food list in order to making possible a choice
-preferences=input('Enter your preferences in this way "breakfast base-breakfast condiment;snack fruit 1-snack fruit 2;\
-launch base-launch condiment;dinner base-dinner condiment" (if you have no preferences for one, type "none" for there):')
-food_restr=input('Enter your restrictions (input has to be submitted in this format restr1-restr2-...):')
 
-#OPERATING RESTRICTIONS
-cereals=cereals*(not cereals[0:cereals.index(' -')] in food_restr)+'none-'*(cereals[0:cereals.index(' -')] in food_restr)
-muesli=muesli*(not muesli[0:muesli.index(' -')] in food_restr)+'none-'*(muesli[0:muesli.index(' -')] in food_restr)
-milk=milk*(not milk[0:milk.index(' -')] in food_restr)+'none-'*(milk[0:milk.index(' -')] in food_restr)
-yogurt=yogurt*(not yogurt[0:yogurt.index(' -')] in food_restr)+'none-'*(yogurt[0:yogurt.index(' -')] in food_restr)
-brown_melba_toast=brown_melba_toast*(not brown_melba_toast[0:brown_melba_toast.index(' -')] in food_restr)+'none-'*\
-(brown_melba_toast[0:brown_melba_toast.index(' -')] in food_restr)
-melba_toast=melba_toast*(not melba_toast[0:melba_toast.index(' -')] in food_restr)+'none-'*(melba_toast[0:melba_toast.index(' -')]\
-in food_restr)
-bread=bread*(not bread[0:bread.index(' -')] in food_restr)+'none-'*(bread[0:bread.index(' -')] in food_restr)
-brown_bread=brown_bread*(not brown_bread[0:brown_bread.index(' -')] in food_restr)+'none-'*(brown_bread[0:brown_bread.index(' -')]\
-in food_restr)
-hazelnut_cream=hazelnut_cream*(not hazelnut_cream[0:hazelnut_cream.index(' -')] in food_restr)+'none-'*(hazelnut_cream\
-[0:hazelnut_cream.index(' -')] in food_restr)
-marmalade=marmalade*(not marmalade[0:marmalade.index(' -')] in food_restr)+'none-'*(marmalade[0:marmalade.index(' -')] in food_restr)
-apple=apple*(not apple[0:apple.index(' -')] in food_restr)+'none-'*(apple[0:apple.index(' -')] in food_restr)
-banana=banana*(not banana[0:banana.index(' -')] in food_restr)+'none-'*(banana[0:banana.index(' -')] in food_restr)
-orange=orange*(not orange[0:orange.index(' -')] in food_restr)+'none-'*(orange[0:orange.index(' -')] in food_restr)
-kiwi=kiwi*(not kiwi[0:kiwi.index(' -')] in food_restr)+'none-'*(kiwi[0:kiwi.index(' -')] in food_restr)
-nut=nut*(not nut[0:nut.index(' -')] in food_restr)+'none-'*(nut[0:nut.index(' -')] in food_restr)
-almond=almond*(not almond[0:almond.index(' -')] in food_restr)+'none-'*(almond[0:almond.index(' -')] in food_restr)
-pasta=pasta*(not pasta[0:pasta.index(' -')] in food_restr)+'none-'*(pasta[0:pasta.index(' -')] in food_restr)
-wholemeal_pasta=wholemeal_pasta*(not wholemeal_pasta[0:wholemeal_pasta.index(' -')] in food_restr)+'none-'*(wholemeal_pasta[0:wholemeal_pasta.index(' -')] in food_restr)
-rice=rice*(not rice[0:rice.index(' -')] in food_restr)+'none-'*(rice[0:rice.index(' -')] in food_restr)
-tomato_sauce=tomato_sauce*(not tomato_sauce[0:tomato_sauce.index(' -')] in food_restr)+'none-'*(tomato_sauce[0:tomato_sauce.index(' -')] in food_restr)
-chicken=chicken*(not chicken[0:chicken.index(' -')] in food_restr)+'none-'*(chicken[0:chicken.index(' -')] in food_restr)
-salad=salad*(not salad[0:salad.index(' -')] in food_restr)+'none-'*(salad[0:salad.index(' -')] in food_restr)
-bresaola=bresaola*(not bresaola[0:bresaola.index(' -')] in food_restr)+'none-'*(bresaola[0:bresaola.index(' -')] in food_restr)
-raw_ham=raw_ham*(not raw_ham[0:raw_ham.index(' -')] in food_restr)+'none-'*(raw_ham[0:raw_ham.index(' -')] in food_restr)
-vegetable_soup=vegetable_soup*(not vegetable_soup[0:vegetable_soup.index(' -')] in food_restr)+'none-'*(vegetable_soup\
-[0:vegetable_soup.index(' -')] in food_restr)
-beef=beef*(not beef[0:beef.index(' -')] in food_restr)+'none-'*(beef[0:beef.index(' -')] in food_restr)
-pizza_margherita=pizza_margherita*(not pizza_margherita[0:pizza_margherita.index(' -')] in food_restr)+'none-'*\
-(pizza_margherita[0:pizza_margherita.index(' -')] in food_restr)
+pref_base_breakfast=input('Enter your preference for a breakfast base (if you have no preferences, type none):')
+pref_cond_breakfast=input('Enter your preference for a breakfast condiment (if you have no preferences, type none):')
+pref_base_snack=input('Enter your preference for the first base of snack (if you have no preferences, type none):')
+pref_cond_snack=input('Enter your preference for the second base of snack (if you have no preferences, type none):')
+pref_base_launch=input('Enter your preference for a launch base (if you have no preferences, type none):')
+pref_cond_launch=input('Enter your preference for a launch condiment (if you have no preferences, type none):')
+pref_base_dinner=input('Enter your preference for a dinner base (if you have no preferences, type none):')
+pref_cond_dinner=input('Enter your preference for a dinner condiment (if you have no preferences, type none):')
+food_restr=input('Enter your restrictions:')
 
-#CALORIE NEED CALCULATION
-BCN=(gender=='male')*(66.5+(13.8*weight)+5*height-6.8*age)+(gender=='female')*(655.1+(9.6*weight)+1.9*height-4.7*age) #daily basic calorie need
-CN=round((activity=='sedentary')*1.1*BCN+(activity=='light')*1.2*BCN+(activity=='medium')*1.3*BCN+(activity=='high')*1.4*BCN,2) #daily calorie need
-CN_breakfast=round(0.3*CN,2)
-CN_snack=round(0.05*CN,2)
-CN_launch=round(0.35*CN,2)
-CN_dinner=round(0.25*CN,2)
+#--CALORIE NEED CALCULATION--#
+#Calculating base calorie need
+if gender=='male':
+    BCN=(66.5+(13.8*weight)+5*height-6.8*age)
+else:
+    BCN=(655.1+(9.6*weight)+1.9*height-4.7*age)
+
+#Adjusting calorie need as function of physical activity
+if activity=='sedentary':
+    CN=round(1.1*BCN,2)
+elif activity=='light':
+    CN=round(1.2*BCN,2)
+elif activity=='medium':
+    CN=round(1.3*BCN,2)
+else:
+    CN=round(1.4*BCN,2)
+
+#Distributing calorie need on the various meals
+CN_breakfast=int(0.3*CN)
+CN_snack=int(0.05*CN)
+CN_launch=int(0.35*CN)
+CN_dinner=int(0.25*CN)
 
 #--DIET CREATION--#
-#BREAKFAST
-base=preferences[0:preferences.index('-')]
-condiment=preferences[preferences.index('-')+1:preferences.index(';')]
-preferences=preferences[preferences.index(';')+1:]
-base=base.replace('none',cereals[0:cereals.index('-')])
-base=base.replace('none',muesli[0:muesli.index('-')])
-base=base.replace('none',brown_melba_toast[0:brown_melba_toast.index('-')])
-base=base.replace('none',melba_toast[0:melba_toast.index('-')])
-base=base.replace('none',bread[0:bread.index('-')])
-base=base.replace('none',brown_bread[0:brown_bread.index('-')])
-condiment=condiment.replace('none',milk[0:milk.index('-')])
-condiment=condiment.replace('none',yogurt[0:yogurt.index('-')])
-condiment=condiment.replace('none',hazelnut_cream[0:hazelnut_cream.index('-')])
-condiment=condiment.replace('none',marmalade[0:marmalade.index('-')])
-str_to_evaluate=base.replace(' ','_').rstrip('_').lower()
-b_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-b_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-str_to_evaluate=condiment.replace(' ','_').rstrip('_').lower()
-c_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
-b_qt=int(b_qt*moltiplicatore*100)
-c_qt=int(c_qt*moltiplicatore*100)
-daily_diet='BREAKFAST\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n\n'
+#BREAKFAST#
+#if the user expressed a preference
+base_label=pref_base_breakfast.lower().replace(' ','_')
+#if the user didn't express a preference
+if base_label=='none':
+    if not(muesli_label in food_restr):
+        base_label=cereals_label.lower().replace(' ','_')
+    elif not(brown_melba_toast_label in food_restr):
+        base_label=brown_melba_toast_label.lower().replace(' ','_')
+    elif not(melba_toast_label in food_restr):
+        base_label=melba_toast_label.lower().replace(' ','_')
+    elif not(bread_label in food_restr):
+        base_label=bread_label.lower().replace(' ','_')
+    elif not(brown_bread_label in food_restr):
+        base_label=brown_bread_label.lower().replace(' ','_')
+base_kcal=eval('{}_{}'.format(base_label,'kcal'))
+base_g=eval('{}_{}'.format(base_label,'g'))
 
-#SNACK
-base=preferences[0:preferences.index('-')]
-condiment=preferences[preferences.index('-')+1:preferences.index(';')]
-preferences=preferences[preferences.index(';')+1:]
-base=base.replace('none',apple[0:apple.index('-')])
-base=base.replace('none',banana[0:banana.index('-')])
-base=base.replace('none',orange[0:orange.index('-')])
-base=base.replace('none',kiwi[0:kiwi.index('-')])
-condiment=condiment.replace('none',nut[0:nut.index('-')])
-condiment=condiment.replace('none',almond[0:almond.index('-')])
-str_to_evaluate=base.replace(' ','_').rstrip('_').lower()
-b_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-b_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-str_to_evaluate=condiment.replace(' ','_').rstrip('_').lower()
-c_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
-b_qt=int(b_qt*moltiplicatore*100)
-c_qt=int(c_qt*moltiplicatore*100)
-snack='SNACK\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n\n'
-daily_diet=daily_diet+snack
+cond_label=pref_cond_breakfast.lower().replace(' ','_')
+if cond_label=='none':
+    if not(milk_label in food_restr):
+        cond_label=milk_label.lower().replace(' ','_')
+    elif not(yogurt_label in food_restr):
+        cond_label=yogurt_label.lower().replace(' ','_')
+    elif not(hazelnut_cream_label in food_restr):
+        cond_label=hazelnut_cream_label.lower().replace(' ','_')
+    elif not(marmalade_label in food_restr):
+        cond_label=marmalade_label.lower().replace(' ','_')
+cond_kcal=eval('{}_{}'.format(cond_label,'kcal'))
+cond_g=eval('{}_{}'.format(cond_label,'g'))
 
-#LAUNCH
-base=preferences[0:preferences.index('-')]
-condiment=preferences[preferences.index('-')+1:preferences.index(';')]
-preferences=preferences[preferences.index(';')+1:]
-base=base.replace('none',pasta[0:pasta.index('-')])
-base=base.replace('none',wholemeal_pasta[0:wholemeal_pasta.index('-')])
-base=base.replace('none',rice[0:rice.index('-')])
-base=base.replace('none',chicken[0:chicken.index('-')])
-base=base.replace('none',bread[0:bread.index('-')])
-base=base.replace('none',brown_bread[0:brown_bread.index('-')])
-base=base.replace('none',salad[0:salad.index('-')])
-base=base.replace('none',bresaola[0:bresaola.index('-')])
-base=base.replace('none',raw_ham[0:raw_ham.index('-')])
-condiment=condiment.replace('none',tomato_sauce[0:tomato_sauce.index('-')])
-str_to_evaluate=base.replace(' ','_').rstrip('_').lower()
-b_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-b_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-str_to_evaluate=condiment.replace(' ','_').rstrip('_').lower()
-c_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
-b_qt=int(b_qt*moltiplicatore*100)
-c_qt=int(c_qt*moltiplicatore*100)
-daily_diet=daily_diet+'LAUNCH\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g\n\n'
-daily_diet=daily_diet+snack
+dish_kcal=int(base_g/100*base_kcal+cond_g/100*cond_kcal)
+multiplier=CN_breakfast/dish_kcal
+base_g=int(base_g*multiplier)
+cond_g=int(cond_g*multiplier)
+breakfast='BREAKFAST ({} kCal)\n{}: {:d} kCal, {:d} g\n{}: {:d} kCal, {:d} g'.format(CN_breakfast,base_label,base_kcal,base_g,\
+                                                                           cond_label,cond_kcal,cond_g)
 
-#DINNER
-base=preferences[0:preferences.index('-')]
-condiment=preferences[preferences.index('-')+1:preferences.index(';')]
-preferences=preferences[preferences.index(';')+1:]
-base=base.replace('none',chicken[0:chicken.index('-')])
-base=base.replace('none',salad[0:salad.index('-')])
-base=base.replace('none',vegetable_soup[0:vegetable_soup.index('-')])
-base=base.replace('none',beef[0:beef.index('-')])
-base=base.replace('none',pizza_margherita[0:pizza_margherita.index('-')])
-condiment=condiment.replace('none',bread[0:bread.index('-')])
-condiment=condiment.replace('none',brown_bread[0:brown_bread.index('-')])
-str_to_evaluate=base.replace(' ','_').rstrip('_').lower()
-b_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-b_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-str_to_evaluate=condiment.replace(' ','_').rstrip('_').lower()
-c_kcal=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- kCal\')+6:'+str_to_evaluate+'.index(\'- g\')]'))
-c_qt=float(eval(str_to_evaluate+'['+str_to_evaluate+'.index(\'- g\')+3:]'))/100
-moltiplicatore=CN_breakfast/(b_qt*b_kcal+c_qt*c_kcal) #moltiplicatore delle quantità di base e condimento
-b_qt=int(b_qt*moltiplicatore*100)
-c_qt=int(c_qt*moltiplicatore*100)
-daily_diet=daily_diet+'DINNER\n'+base+' '+str(b_qt)+' g\n'+condiment+' '+str(c_qt)+' g'
+#SNACK#
+#if the user expressed a preference
+base_label=pref_base_snack.lower().replace(' ','_')
+#if the user didn't express a preference
+if base_label=='none':
+    if not(apple_label in food_restr):
+        base_label=apple_label.lower().replace(' ','_') #bisogna redere minuscolo il nome della variabile per poterla richiamare con eval
+    elif not(banana_label in food_restr):
+        base_label=banana_label.lower().replace(' ','_')
+    elif not(orange_label in food_restr):
+        base_label=orange_label.lower().replace(' ','_')
+    elif not(kiwi_label in food_restr):
+        base_label=kiwi_label.lower().replace(' ','_')
+base_kcal=eval('{}_{}'.format(base_label,'kcal'))
+base_g=eval('{}_{}'.format(base_label,'g'))
 
-print(daily_diet+'\n\nThank you for having tried our app!')
+cond_label=pref_cond_snack.lower().replace(' ','_')
+if cond_label=='none':
+    if not(nut_label in food_restr):
+        cond_label=nut_label.lower().replace(' ','_')
+    elif not(almond_label in food_restr):
+        cond_label=almond_label.lower().replace(' ','_')
+cond_kcal=eval('{}_{}'.format(cond_label,'kcal'))
+cond_g=eval('{}_{}'.format(cond_label,'g'))
+
+dish_kcal=int(base_g/100*base_kcal+cond_g/100*cond_kcal)
+multiplier=CN_snack/dish_kcal
+base_g=int(base_g*multiplier)
+cond_g=int(cond_g*multiplier)
+snack='SNACK ({} kCal)\n{}: {:d} kCal, {:d} g\n{}: {:d} kCal, {:d} g'.format(CN_snack,base_label,base_kcal,base_g,\
+                                                                    cond_label,cond_kcal,cond_g)
+
+#LAUNCH#
+#if the user expressed a preference
+base_label=pref_base_launch.lower().replace(' ','_')
+#if the user didn't express a preference
+if base_label=='none':
+    if not(pasta_label in food_restr):
+        base_label=pasta_label.lower().replace(' ','_') #bisogna redere minuscolo il nome della variabile per poterla richiamare con eval
+    elif not(wholemeal_pasta_label in food_restr):
+        base_label=wholemeal_pasta_label.lower().replace(' ','_')
+    elif not(rice_label in food_restr):
+        base_label=rice_label.lower().replace(' ','_')
+    elif not(chicken_label in food_restr):
+        base_label=chicken_label.lower().replace(' ','_')
+    elif not(bread_label in food_restr):
+        base_label=bread_label.lower().replace(' ','_')
+    elif not(brown_bread_label in food_restr):
+        base_label=brown_bread_label.lower().replace(' ','_')
+    elif not(bresaola_label in food_restr):
+        base_label=bresaola_label.lower().replace(' ','_')
+    elif not(raw_ham_label in food_restr):
+        base_label=raw_ham_label.lower().replace(' ','_')
+base_kcal=eval('{}_{}'.format(base_label,'kcal'))
+base_g=eval('{}_{}'.format(base_label,'g'))
+
+cond_label=pref_cond_launch.lower().replace(' ','_')
+if cond_label=='none':
+    if not(tomato_sauce_label in food_restr):
+        cond_label=tomato_sauce_label.lower().replace(' ','_')
+    elif not(salad_label in food_restr):
+        cond_label=salad_label.lower().replace(' ','_')
+cond_kcal=eval('{}_{}'.format(cond_label,'kcal'))
+cond_g=eval('{}_{}'.format(cond_label,'g'))
+
+dish_kcal=int(base_g/100*base_kcal+cond_g/100*cond_kcal)
+multiplier=CN_launch/dish_kcal
+base_g=int(base_g*multiplier)
+cond_g=int(cond_g*multiplier)
+launch='LAUNCH ({} kCal)\n{}: {:d} kCal, {:d} g\n{}: {:d} kCal, {:d} g'.format(CN_launch,base_label,base_kcal,base_g,\
+                                                                    cond_label,cond_kcal,cond_g)
+
+#DINNER#
+#if the user expressed a preference
+base_label=pref_base_dinner.lower().replace(' ','_')
+#if the user didn't express a preference
+if base_label=='none':
+    if not(chicken_label in food_restr):
+        base_label=chicken_label.lower().replace(' ','_') #bisogna redere minuscolo il nome della variabile per poterla richiamare con eval
+    elif not(bread_label in food_restr):
+        base_label=bread_label.lower().replace(' ','_')
+    elif not(brown_bread_label in food_restr):
+        base_label=brown_bread_label.lower().replace(' ','_')
+    elif not(beef_label in food_restr):
+        base_label=beef_label.lower().replace(' ','_')
+    elif not(pizza_margherita_label in food_restr):
+        base_label=pizza_margherita_label.lower().replace(' ','_')
+base_kcal=eval('{}_{}'.format(base_label,'kcal'))
+base_g=eval('{}_{}'.format(base_label,'g'))
+
+cond_label=pref_cond_launch.lower().replace(' ','_')
+if cond_label=='none':
+    if not(vegetable_soup_label in food_restr):
+        cond_label=vegetable_soup_label.lower().replace(' ','_')
+    elif not(salad_label in food_restr):
+        cond_label=salad_label.lower().replace(' ','_')
+cond_kcal=eval('{}_{}'.format(cond_label,'kcal'))
+cond_g=eval('{}_{}'.format(cond_label,'g'))
+
+dish_kcal=int(base_g/100*base_kcal+cond_g/100*cond_kcal)
+multiplier=CN_dinner/dish_kcal
+base_g=int(base_g*multiplier)
+cond_g=int(cond_g*multiplier)
+dinner='DINNER ({} kCal)\n{}: {:d} kCal, {:d} g\n{}: {:d} kCal, {:d} g'.format(CN_dinner,base_label,base_kcal,base_g,\
+                                                                    cond_label,cond_kcal,cond_g)
+
+#--SHOWING OUTPUT--#
+diet='\nDAILY DIET ({} kCal)\n\n{}\n\n{}\n\n{}\n\n{}\n\n{}'.format(CN,breakfast,snack,launch,snack,dinner)
+print(diet+'\n\nThank you for having tried our app!')
