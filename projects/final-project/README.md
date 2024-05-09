@@ -17,7 +17,7 @@ The goal of the project is to create a simple tool that allows users to obtain a
 - Ask the user for any food preferences or restrictions and store them in a text variable.
 - Calculation of daily calorie requirement:
 
-- Using only mathematical calculations, calculate the user's daily calorie needs based on their gender, age, height and weight.
+- Using only mathematical calculations, calculate the ser'us daily calorie needs based on their gender, age, height and weight.
 Store the daily calorie requirement value in a numeric variable.
 Meal plan generation:
 
@@ -33,3 +33,11 @@ If you have provided food preferences or restrictions, adjust your meal plan acc
 ### End of program:
 
 Show a closing and thank you message to the user.
+
+user_gender = input("Please enter your gender : male/female")
+user_age = int(input("please enter your age"))
+user_height = int(input("please enter your height in cm"))
+user_weight = int(input("please enter your weight in kg"))
+user_activity = input("please enter your level of activity: sedentary/light/moderate/heavy"))
+user_preferences = input("Please enter any food preferences")
+user_restrictions = input("Please enter any food restrictions")
