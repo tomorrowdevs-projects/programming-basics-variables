@@ -1,0 +1,46 @@
+<mxfile host="Electron" modified="2024-04-07T20:01:12.103Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="27wTMnxRh5PEQg0EVlXL" version="24.1.0" type="device">
+  <diagram name="Pagina-1" id="fbqunWjZAxdyamzSwqnj">
+    <mxGraphModel dx="880" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1r2ydadDJ1f59bn816TI-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9_fANw1bV_Ta1_bifgJS-1" target="1r2ydadDJ1f59bn816TI-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_fANw1bV_Ta1_bifgJS-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="174" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1r2ydadDJ1f59bn816TI-1" target="1r2ydadDJ1f59bn816TI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-1" value="ASKING USER FOR INPUT&lt;div&gt;-gender (male/female)&lt;/div&gt;&lt;div&gt;-age (int)&lt;/div&gt;&lt;div&gt;-height (float cm)&lt;/div&gt;&lt;div&gt;-weight (float kg)&lt;/div&gt;&lt;div&gt;-level of physical acivity (sedentary/light/medium/high)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="151" y="140" width="166" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1r2ydadDJ1f59bn816TI-3" target="1r2ydadDJ1f59bn816TI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-3" value="Show user avaible food&lt;div&gt;(only food labels)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="164" y="280" width="139" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1r2ydadDJ1f59bn816TI-9" target="1r2ydadDJ1f59bn816TI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-9" value="ASKING USER FOR PREFERENCES&lt;div&gt;-breakfast base (str)&lt;/div&gt;&lt;div&gt;-breakfast condiment (str)&lt;/div&gt;&lt;div&gt;-snack base 1 (str)&lt;/div&gt;&lt;div&gt;-snack base 2 (str)&lt;/div&gt;&lt;div&gt;-launch base (str)&lt;/div&gt;&lt;div&gt;-launch condiment (str)&lt;/div&gt;&lt;div&gt;-dinner base (str)&lt;/div&gt;&lt;div&gt;-dinner condiment (str)&lt;/div&gt;&lt;div&gt;note: only one preference for ech question and type none if no preference&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="115.5" y="360" width="236" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1r2ydadDJ1f59bn816TI-11" target="1r2ydadDJ1f59bn816TI-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-11" value="ASKING USER FOR RESTRICTIONS" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="123" y="580" width="221" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-15" value="&lt;span style=&quot;text-wrap: wrap;&quot;&gt;FOOD DB STRUCTURE&lt;/span&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;FoodName_label (str)&lt;/div&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;FoodName_kCal (int)&lt;/div&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;FoodName_g (int g) (quantità standard cibo)&lt;/div&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;FoodName_prot (int g) (proteine)&lt;/div&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;FoodName_fat (int g) (grassi)&lt;/div&gt;&lt;div style=&quot;text-wrap: wrap;&quot;&gt;FoodName_carb (int g) (carboidrati)&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=center;labelPosition=right;pointerEvents=1;spacing=2;" vertex="1" parent="1">
+          <mxGeometry x="303" y="190" width="132" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="1r2ydadDJ1f59bn816TI-17" value="CALORIE NEED CALCULATION" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="120.75" y="650" width="226.5" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
