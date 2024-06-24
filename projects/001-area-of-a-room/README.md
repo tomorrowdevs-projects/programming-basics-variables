@@ -14,17 +14,18 @@ For this project solution you may use:
 - Strings
 
 # Test
-Execute the test to validate your solution.  
 
-**VSCODE**   
-To run the test command from the README.md install the extension **runme**. 
-Press Ctrl+Shift+x search and install the **runme** extension. 
+Execute the test to validate your solution.
 
+**VSCODE**  
+To run the test command from the README.md install the extension **runme**.
+Press Ctrl+Shift+x search and install the **runme** extension.
 
 **Python**
 
-```sh
+```sh {"id":"01J0Y1KP7VQPNZZH33PQMXKA3Q"}
 python -m unittest python/test_area_of_a_room.py
+
 ```
 
 or run the command from the terminal  
